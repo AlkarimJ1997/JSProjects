@@ -1,0 +1,152 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: rgb(29, 26, 26);
+}
+
+.gameContainer {
+    display: inline-block;
+    position: relative;
+}
+
+#battleDiv {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#battleInterface {
+    display: none;
+}
+
+.attackBarContainer {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 4px solid black;
+    height: 140px;
+}
+
+#typeBox {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px solid black;
+}
+
+#typeBox > h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#attacksBox {
+    width: 66.66%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#attacksBox > button {
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#attacksBox > button:hover {
+    background-color: #ddd;
+}
+
+#enemyContainer {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 250px;
+    border: 4px solid black;
+    padding: 12px;
+}
+
+#enemyContainer > h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#enemyHealthBarContainer {
+    position: relative;
+}
+
+#enemyGreyBar {
+    background-color: #ccc;
+    margin-top: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#enemyHealthBar {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#pokemonContainer {
+    background-color: white;
+    position: absolute;
+    top: 330px;
+    right: 50px;
+    width: 250px;
+    border: 4px solid black;
+    padding: 12px;
+}
+
+#pokemonContainer > h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#pokemonHealthBarContainer {
+    position: relative;
+}
+
+#pokemonGreyBar {
+    background-color: #ccc;
+    margin-top: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#pokemonHealthBar {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#dialogueBox {
+    background-color: white;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px;
+}

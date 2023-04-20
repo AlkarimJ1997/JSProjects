@@ -1,0 +1,96 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+/* Global CSS variables */
+:root {
+    --bg-dark: #25252A;
+    --bg-btn-red: rgb(255, 0, 68);
+    --bg-btn-yellow: #F9E506;
+
+    --cl-white: #FFF;
+    --cl-black: #000;
+    --cl-neon-blue: #42FBF2;
+}
+
+/* Reset box sizing model and remove default margin/padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background: var(--bg-dark);
+}
+
+/* CSS styling for the container */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* CSS styling for the slide in button */
+.btn-1 {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: var(--cl-white);
+    background: var(--bg-btn-red);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 var(--bg-btn-yellow);
+    transition: all 0.3s ease-out;
+    font-size: 2rem;
+    outline: none;
+}
+
+.btn-1:hover {
+    box-shadow: inset 300px 0 0 0 var(--bg-btn-yellow);
+    cursor: pointer;
+    color: var(--cl-black);
+}
+
+/* CSS styling for the slide out button */
+.btn-2 {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: var(--cl-white);
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid var(--cl-neon-blue);
+    background: var(--bg-dark);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-2:hover {
+    cursor: pointer;
+}
+
+.btn-2::before {
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    background: var(--cl-neon-blue);
+}
+
+.btn-2:hover::before {
+    transition: all 0.5s ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}

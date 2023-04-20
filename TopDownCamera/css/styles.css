@@ -1,0 +1,149 @@
+:root {
+    --pixel-size: 2px;
+    --map-size: 20px;
+    --grid-cell: calc(var(--pixel-size) * 16);
+    --grid-cell-map: calc(var(--map-size) * 16);
+    --bg: #9fa7e4;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pixelArt {
+    image-rendering: pixelated;
+}
+
+.frame {
+    /* this is styling for the main div */
+    width: calc(var(--pixel-size) * 160);
+    height: calc(var(--pixel-size) * 144);
+    outline: var(--pixel-size) solid #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.camera {
+    width: calc(var(--pixel-size) * 160);
+    height: calc(var(--pixel-size) * 144);
+    overflow: hidden;
+    background: #61ddf7;
+    position: relative;
+}
+
+.map {
+    image-rendering: pixelated;
+    background-image: url("../assets/images/PalletTown.png");
+    background-size: 100%;
+    width: calc(13 * var(--grid-cell-map));
+    height: calc(10 * var(--grid-cell-map));
+    position: relative;
+}
+
+.character {
+    width: calc(var(--grid-cell) * 2);
+    height: calc(var(--grid-cell) * 2);
+    position: absolute;
+    overflow: hidden;
+}
+
+.shadow {
+    width: calc(var(--grid-cell) * 2);
+    height: calc(var(--grid-cell) * 2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("https://assets.codepen.io/21542/DemoRpgCharacterShadow.png") no-repeat no-repeat;
+    background-size: 100%;
+}
+
+.characterSpriteSheet {
+    /* 8 is used to crop the sprite sheet, 4x4 */
+    position: absolute;
+    background: url("../assets/images/DemoRpgCharacter.png") no-repeat no-repeat;
+    background-size: 100%;
+    width: calc(var(--grid-cell) * 8);
+    height: calc(var(--grid-cell) * 8);
+}
+
+/* data attributes for character facing different directions */
+.character[facing="right"] .characterSpriteSheet {
+    background-position-y: calc(var(--pixel-size) * -32);
+}
+
+.character[facing="up"] .characterSpriteSheet {
+    background-position-y: calc(var(--pixel-size) * -64);
+}
+
+.character[facing="left"] .characterSpriteSheet {
+    background-position-y: calc(var(--pixel-size) * -96);
+}
+
+/* CSS for character walking */
+.character[walking="true"] .characterSpriteSheet {
+    animation: walkAnimation 0.6s steps(4) infinite;
+}
+
+/* CSS for indented corners on the frame */
+.cornerTopLeft,
+.cornerTopRight,
+.cornerBottomLeft,
+.cornerBottomRight {
+    position: absolute;
+    width: var(--pixel-size);
+    height: var(--pixel-size);
+    background: var(--bg);
+    z-index: 2;
+}
+
+.cornerTopLeft {
+    top: calc(var(--pixel-size) * -1);
+    left: calc(var(--pixel-size) * -1);
+}
+
+.cornerTopRight {
+    top: calc(var(--pixel-size) * -1);
+    right: calc(var(--pixel-size) * -1);
+}
+
+.cornerBottomLeft {
+    bottom: calc(var(--pixel-size) * -1);
+    left: calc(var(--pixel-size) * -1);
+}
+
+.cornerBottomRight {
+    bottom: calc(var(--pixel-size) * -1);
+    right: calc(var(--pixel-size) * -1);
+}
+
+/* Keyframe for character walking using translate3D */
+@keyframes walkAnimation {
+    from {
+        transform: translate3D(0%, 0%, 0);
+    }
+    to {
+        transform: translate3D(-100%, 0%, 0);
+    }
+}
+
+/* Media Queries */
+@media(min-width: 700px) {
+    :root {
+        --pixel-size: 3px;
+    }
+}
+
+@media(min-width: 1000px) {
+    :root {
+        --pixel-size: 4px;
+    }
+}

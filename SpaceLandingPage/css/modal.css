@@ -1,0 +1,186 @@
+/* CSS styling for the sign up modal */
+.modal {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+/* CSS styling for the modal's content */
+.modal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--bg-modal);
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0px 7px 20px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 3px;
+    min-height: 500px;
+}
+
+/* CSS styling for the modal close button */
+.close-btn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+    color: var(--cl-bright-red);
+    transition: 0.2s ease-out;
+}
+
+/* CSS styling for the modal image */
+.modal-content-left {
+    background: var(--bg-modal-gradient);
+    border-radius: 0px 3px 3px 0px;
+    position: relative; 
+}
+
+#modal-img {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CSS styling for the modal form */
+.modal-content-right {
+    border-radius: 0px 3px 3px 0px;
+    position: relative;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+
+.modal-form h1 {
+    font-size: 1rem;
+    text-align: start;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+/* CSS styling for the input groups */
+.form-validation {
+    margin-bottom: 0.5rem;
+    width: 80%;
+}
+
+.modal-input {
+    display: block;
+    padding-left: 0.5rem;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    height: 2rem;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.modal-input::placeholder {
+    color: var(--cl-light-grey);
+}
+
+/* CSS styling for the modal signup button */
+.modal-input-btn {
+    width: 80%;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: var(--cl-bright-red);
+    outline: none;
+    border: none;
+    color: var(--cl-white);
+    font-size: 1rem;
+}
+
+.modal-input-btn:hover {
+    cursor: pointer;
+    background-color: var(--cl-light-blue);
+    transition: all 0.4s ease-out;
+}
+
+/* CSS styling for the "Already have an account? Login here" */
+.modal-input-login {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: var(--cl-light-grey);
+    width: 80%;
+    text-align: center;
+}
+
+.modal-input-login a {
+    text-decoration: none;
+    color: var(--cl-bright-red);
+    font-weight: 600;
+}
+
+/* CSS styling for the error and validation messages */
+.form-validation.error {
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid var(--cl-error);
+    border-radius: 2px;
+}
+
+.form-validation.valid {
+    margin-bottom: 0.5rem;
+    position: relative;
+    border: 1px solid var(--cl-valid);
+    border-radius: 2px;
+}
+
+.form-validation p {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    color: var(--cl-error);
+    position: absolute;
+    top: 1.8rem;
+    display: none;
+}
+
+.form-validation.error p {
+    display: block;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .modal-content-left {
+        display: none;
+    }
+
+    .modal-content {
+        grid-template-columns: auto;
+        margin: 15% auto;
+        width: 70%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .modal-content {
+        margin: 20% auto;
+        width: 90%;
+        height: 80%;
+    }
+}

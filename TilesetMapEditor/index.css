@@ -1,0 +1,150 @@
+/* Global variables */
+:root {
+    --bg-gradient: linear-gradient(180deg, #FFF9E4 0%, #EEEED8 100%); 
+    --bg-white: #FFF;
+    --bg-canvas: #F4F8F9;
+    --cl-button-active: #0884F1;
+    --cl-grey: #7F808E;
+    --cl-blue: #4E84FA;
+}
+
+/* Reset box sizing model */
+* {
+  box-sizing: border-box;
+}
+
+html { height: 100% }
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 1em;
+    background: var(--bg-gradient);
+    display: flex;
+    justify-content: space-around;
+    color: #2F2C48;
+}
+
+/* CSS Styling for the heading and buttons */
+.card {
+    background: var(--bg-white);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 1em;
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+}
+
+/* CSS styling for the aside */
+aside {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* CSS styling for the card body (tileset column, canvas) */
+.card_body {
+    display: flex;
+}
+
+.card_right-column {
+    padding-right: 16px;
+}
+
+.tileset-container {
+    position: relative;
+}
+
+.tileset-container_selection {
+    position: absolute;
+    outline: 3px solid cyan;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+}
+
+canvas {
+    /* outline: 1px solid #DDD; */
+    background: var(--bg-canvas);
+}
+
+/* CSS styling for layers */
+.layers {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS styling for buttons */
+button {
+    appearance: none;
+    font-family: inherit;
+    outline: 0;
+    background: transparent;
+    border: 0;
+    padding: 8px 0;
+    /* border-bottom: 1px solid #DDD; */
+    /* display: block; */
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.layer.active {
+    font-weight: bold;
+    color: var(--cl-button-active);
+}
+
+.button-as-link {
+    appearance: none;
+    margin-right: 1em;
+    text-decoration: underline;
+    background: transparent;
+    color: var(--cl-grey);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.primary-button {
+    border: 0;
+    background: var(--cl-blue);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid #3166C7;
+    color: var(--bg-white);
+    border-radius: 6px;
+    outline: 0;
+    padding: 6px 16px;
+    cursor: pointer;
+}
+
+/* CSS styling for labels */
+label {
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    display: block;
+}
+
+/* CSS styling for instructions */
+.instructions {
+    font-size: 0.8em;
+    color: #AAA;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 16px;
+}

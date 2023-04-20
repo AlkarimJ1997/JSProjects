@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Box Icons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image__text">
+                <span class="image">
+                    <img src="logo.svg" alt="Logo">
+                </span>
+
+                <div class="text logo__text">
+                    <span class="name">CodingLab</span>
+                    <span class="profession">Web Developer</span>
+                </div>
+            </div>
+
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+        <!-- Menu -->
+        <div class="menu__bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+                <ul class="menu__links">
+                    <li class="nav__link">
+                        <a href="#">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav__text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">
+                            <i class="bx bx-bar-chart-alt-2 icon"></i>
+                            <span class="text nav__text">Revenue</span>
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">
+                            <i class="bx bx-bell icon"></i>
+                            <span class="text nav__text">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">
+                            <i class="bx bx-pie-chart-alt icon"></i>
+                            <span class="text nav__text">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">
+                            <i class="bx bx-heart icon"></i>
+                            <span class="text nav__text">Favorites</span>
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">
+                            <i class="bx bx-wallet icon"></i>
+                            <span class="text nav__text">Wallets</span>
+                        </a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#">
+                            <i class="bx bx-cog icon"></i>
+                            <span class="text nav__text">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Bottom Content (Logout and Dark Mode Toggle) -->
+            <div class="bottom__content">
+                <li>
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav__text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="sun__moon">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode__text text">Dark Mode</span>
+                    <!-- Toggle Switch -->
+                    <div class="toggle__switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="home">
+        <div class="text">Dashboard Sidebar</div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>

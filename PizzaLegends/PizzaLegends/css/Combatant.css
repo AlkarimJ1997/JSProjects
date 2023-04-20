@@ -1,0 +1,165 @@
+.Combatant {
+    width: 67px;
+    height: 14px;
+    background: url("/images/ui/combatant-plate.png") no-repeat no-repeat;
+    position: absolute;
+}
+
+/* CSS scaling for when combatant is in the battle (transition for swapping) */
+.Battle .Combatant {
+    transform: scale(2);
+    transition: opacity 0.4s;
+}
+
+/* Showing only the active Combatant */
+.Battle .Combatant[data-active="false"] {
+    opacity: 0;
+}
+
+.Battle .Combatant[data-active="true"] {
+    opacity: 1;
+}
+
+.Combatant[data-team="player"] {
+    /* Positioning for player's combatants */
+    left: 46px;
+    top: 70px;
+}
+
+.Combatant[data-team="enemy"] {
+    /* Positioning for enemy's combatants */
+    top: 28px;
+    right: 77px;
+}
+
+.Combatant_character_crop {
+    position: absolute;
+    bottom: 1px;
+    left: 3px;
+    width: 22px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.Combatant_character {
+    display: block;
+    position: absolute;
+    left: -11px;
+    bottom: -7px;
+}
+
+.Battle .Combatant_character_crop {
+    display: none;
+}
+
+/* CSS for name and type of Combatants */
+.Combatant_name {
+    position: absolute;
+    left: -2px;
+    top: -8px;
+    white-space: nowrap;
+    background: var(--menu-font-color);
+    color: #fff;
+    font-size: 5px; /* Small because component is scaled 2x */
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0;
+}
+
+.Combatant_type {
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Invisible containers for life (HP) */
+.Combatant_life-container {
+    position: absolute;
+    left: 20px; /* 19.5px */
+    top: 4px;
+    width: 26px; /* 27px */
+    height: 3px;
+}
+
+.Combatant_life-container>rect {
+    transition: width 0.2s;
+}
+
+/* CSS for xp and level of Combatants */
+.Combatant_xp-container {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    width: 26px;
+    height: 2px;
+}
+
+.Combatant_level {
+    position: absolute;
+    font-size: 12px;
+    right: 2px;
+    top: -1px;
+    width: 17px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8C594;
+    border: 1px solid #A48465;
+    margin: 0;
+}
+
+/* CSS for status of Combatants */
+.Combatant_status {
+    position: absolute;
+    font-size: 5px;
+    left: 47px;
+    bottom: -3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin: 0;
+}
+
+.Combatant_status[data-status="saucy"] {
+    color: red;
+}
+
+.Combatant_status[data-status="clumsy"] {
+    background: var(--combatant-status-clumsy-background);
+}
+
+/* CSS styling for Pizzas (transitions for swapping of Pizzas) */
+.Pizza {
+    position: absolute;
+    transform: scale(2);
+    transition: opacity 0.4s, transform 0.4s;
+    background: url(/images/characters/pizzas/pizza-shadow.png) no-repeat no-repeat;
+}
+
+.Pizza[data-team="player"] {
+    /* Positioning for player's pizzas */
+    bottom: 73px;
+    left: 51px;
+}
+
+.Pizza[data-team="enemy"] {
+    /* Positioning for enemy's pizzas */
+    top: 47px;
+    right: 100px;
+}
+
+/* Showing only the active pizza(s) and moving inactive ones down
+   and pushing active ones up (for swapping) */
+.Pizza[data-active="false"] {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0) scale(2);
+}
+
+.Pizza[data-active="true"] {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(2);
+}

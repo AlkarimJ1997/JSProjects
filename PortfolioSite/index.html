@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkarim Jiwa</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Stylesheet for theme changing -->
+    <link id="theme__style" rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- First Section -->
+    <section class="light__section">
+        <div class="main__container">
+            <div class="greeting__wrapper">
+                <h1>Hi, I'm Alkarim Jiwa</h1>
+            </div>
+            <div class="intro__wrapper">
+                <div class="nav__wrapper">
+                    <div class="dots__wrapper">
+                        <div id="dot__1" class="browser__dot"></div>
+                        <div id="dot__2" class="browser__dot"></div>
+                        <div id="dot__3" class="browser__dot"></div>
+                    </div>
+
+                    <ul id="navigation">
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="left__column">
+                    <img id="profile__pic" src="images/avatar.svg" alt="Profile Pic" />
+                    <h5 id="theme__title">Personalize Theme</h5>
+
+                    <div id="theme__options__wrapper">
+                        <div id="light__mode" data-mode="light" class="theme__dot"></div>
+                        <div id="blue__mode" data-mode="blue" class="theme__dot"></div>
+                        <div id="green__mode" data-mode="green" class="theme__dot"></div>
+                        <div id="purple__mode" data-mode="purple" class="theme__dot"></div>
+                    </div>
+
+                    <p id="settings__note">
+                        *Theme settings will be saved for<br>your next visit
+                    </p>
+                </div>
+
+                <div class="right__column">
+                    <div class="preview__shadow">
+                        <div id="preview">
+                            <div id="corner__tl" class="corner"></div>
+                            <div id="corner__tr" class="corner"></div>
+                            <h3>What I Do</h3>
+                            <p>
+                                I'm a web developer with skills in React, HTML, CSS & JavaScript.
+                            </p>
+                            <div id="corner__br" class="corner"></div>
+                            <div id="corner__bl" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="dark__section">
+        <div class="main__container">
+            <div class="about__wrapper">
+                <div class="about__me">
+                    <h4>More about me</h4>
+                    <p>
+                        I build new projects and test new technologies to see the best, and most efficient way to solve
+                        problems.
+                    </p>
+                    <p>
+                        While I keep busy making new websites and full-stack applications, I still take interviews in
+                        search of great teams & projects that interest me.
+                    </p>
+
+                    <hr />
+
+                    <h4>TOP EXPERTISE</h4>
+
+                    <p>Full Stack developer with primary focus on React + Django:
+                        <a href="resume.pdf" target="_blank">
+                            Download Resume
+                        </a>
+                    </p>
+
+                    <div class="skills">
+                        <ul>
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>Angular</li>
+                            <li>Redux</li>
+                            <li>GraphQL</li>
+                        </ul>
+
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="social__links">
+                    <img id="social__img" src="images/follow.svg" alt="Follow Me" />
+                    <h3>Find me on Twitter & GitHub</h3>
+                    <a href="#" target="_blank">Twitter: @KingStalia1</a>
+                    <br />
+                    <a href="#" target="_blank">GitHub: AlkarimJ1997</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section -->
+    <section class="light__section">
+        <div class="main__container">
+            <h3 class="projects__title">Some of my past projects</h3>
+
+            <div class="post__wrapper">
+                <!-- Post 1 -->
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg" alt="Laboratory Management System" />
+
+                        <div class="post__preview">
+                            <h6 class="post__title">Laboratory Management System</h6>
+                            <p class="post__intro">
+                                Designed built & maintained a Laboratory Management System using React and Context API.
+                            </p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/ecom.jpg" alt="E-Commerce" />
+
+                        <div class="post__preview">
+                            <h6 class="post__title">Online Store</h6>
+                            <p class="post__intro">
+                                Online store with Paypal integration & guest user shopping using React and Stripe.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/gatsby.svg" alt="Gatsby Site" />
+
+                        <div class="post__preview">
+                            <h6 class="post__title">Travel Website</h6>
+                            <p class="post__intro">
+                                Designed & built a travel website with checkout using React, Gatsby and GraphQL.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth Section -->
+    <section class="dark__section">
+        <div class="main__container">
+            <h3 class="contact__title">Get In Touch</h3>
+
+            <form id="contact__form">
+                <label>Name</label>
+                <input class="input__field" type="text" name="name" />
+
+                <label>Subject</label>
+                <input class="input__field" type="text" name="subject" />
+
+                <label>Email</label>
+                <input class="input__field" type="text" name="email" />
+
+                <label>Message</label>
+                <textarea class="input__field" name="message"></textarea>
+
+                <input id="submit__btn" type="submit" value="Send" />
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>

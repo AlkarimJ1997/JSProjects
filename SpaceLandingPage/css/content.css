@@ -1,0 +1,141 @@
+/* CSS styling for the main container */
+.main {
+    background-color: var(--cl-dark-grey);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    width: 80%;
+    height: 80vh;
+    background-color: var(--cl-dark-grey);
+    margin: 0 auto;
+}
+
+/* CSS styling for the main content */
+.main-content {
+    justify-self: start;
+    margin-left: 20px;
+    color: var(--cl-white);
+    width: 80%;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+}
+
+.main-content p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* CSS styling for the main content button */
+.main-btn {
+    font-size: 1rem;
+    background-color: var(--cl-bright-red);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    color: var(--cl-white);
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+
+    /* styling for the slide effect */
+    position: relative;
+    transition: all 0.35s;
+}
+
+.main-btn:hover {
+    color: var(--cl-white);
+}
+
+.main-btn a {
+    position: relative;
+    z-index: 2;
+    color: var(--cl-white);
+    text-decoration: none;
+}
+
+.main-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    transition: all 0.35s;
+    background: var(--cl-light-blue);
+}
+
+/* Fill effect for the button slides all the way to the right */
+.main-btn:hover::after {
+    width: 100%;
+}
+
+/* CSS styling for the main content image */
+.main-img-container {
+    text-align: center;
+}
+
+#main-img {
+    height: 80%;
+    width: 80%;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 90%;
+        height: 80vh;
+        background-color: var(--cl-dark-grey);
+        margin: 0 auto;
+    }
+
+    .main-content {
+        justify-self: center;
+        color: var(--cl-white);
+        width: 80%;
+        margin: 0;
+    }
+
+    .main-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #main-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        text-align: center;
+    }
+
+    .main-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .main-content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main-btn {
+        padding: 12px 36px;
+        margin-top: 2.5rem;
+    }
+}

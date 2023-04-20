@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Top Down 2D Game Camera</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="cornerTopLeft"></div>
+        <div class="cornerTopRight"></div>
+        <div class="cornerBottomLeft"></div>
+        <div class="cornerBottomRight"></div>
+
+        <div class="camera">
+            <div class="map pixelArt">
+                <div class="character" facing="down" walking="true">
+                    <div class="shadow pixelArt"></div>
+                    <div class="characterSpriteSheet pixelArt"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

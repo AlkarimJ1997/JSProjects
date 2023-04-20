@@ -1,0 +1,239 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Global CSS variables */
+:root {
+    --bg-body: #28282b;
+
+    --clr-white: #FFF;
+    --clr-black: #252222;
+    --clr-light-grey: #F7F7F7;
+    --clr-card: #292D34;
+    --clr-purple: #7E3EF3;
+    --clr-red: #FE4242;
+    --clr-blue: #2EE1F9;
+    --clr-green: #2EF968;
+    --clr-yellow: #FFCF11;
+    --clr-turquoise: #86FFC6;
+    --clr-pink: #FF60B2;
+    --clr-dark-blue: #5462FF;
+}
+
+/* Reset box-sizing model and reset default margin/padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: var(--bg-body);
+}
+
+/* Positioning for navbar container */
+.global-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--clr-white);
+    z-index: 999;
+}
+
+/* Height and alignment of navbar container */
+.row {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    /* padding: 0; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Styling of navbar logo */
+.global-logo a {
+    color: var(--clr-black);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Positioning of navbar */
+.nav-menu {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 22px;
+    margin-left: 50px;
+}
+
+/* Styling of navbar items (Home, Services) */
+ul {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 22px;
+    position: relative;
+}
+
+li > a {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: var(--clr-black);
+    font-weight: bold;
+}
+
+/* Positioning and styling of dropdown menu */
+.sub-nav {
+    position: absolute;
+    top: 100%;
+    left: -120px;
+    background: var(--clr-light-grey);
+    border-radius: 5px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 628px;
+
+    /* Hide dropdown menu until Services is clicked */
+    display: none;
+}
+
+/* Hover effect to show dropdown menu when Services is hovered over */
+#services:hover .sub-nav {
+    display: flex;
+}
+
+/* Positioning and alignment of dropdown menu columns */
+.sub-nav-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Spacing between left column and right column */
+.left {
+    margin-right: 4px;
+}
+
+.right {
+    margin-left: 4px;
+}
+
+/* Positioning and styling of column items */
+.sub-nav-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 auto;
+    background: var(--clr-white);
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 4px 0;
+    min-height: 100px;
+    padding: 24px 14px 24px 96px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+/* Positioning and styling of column item icons */
+.icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    background: var(--clr-black);
+    border-radius: 50%;
+    position: absolute;
+    left: 14px;
+}
+
+.icon {
+    color: var(--clr-white);
+    font-size: 20px;
+}
+
+/* Styling of column item headings */
+.sub-nav-box h4 {
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    line-height: 16px;
+    margin: 0 0 0.5em;
+    padding: 0;
+    text-transform: uppercase;
+    color: var(--clr-card);
+}
+
+/* Styling of column item subheadings */
+.sub-nav-box p {
+    color: var(--clr-card);
+    line-height: 16px;
+}
+
+/* Positioning and styling of arrow shape (top of dropdown menu once shown) */
+.sub-nav::after {
+    content: '';
+    left: 140px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    border: solid transparent;
+    border-color: rgba(252, 252, 252, 0);
+    border-bottom-color: var(--clr-light-grey);
+    border-width: 20px;
+    border-radius: 2px;
+    margin-left: -20px;
+}
+
+/* Hover effects for column items */
+.sub-nav-box:hover h4, 
+.sub-nav-box:hover p {
+    color: var(--clr-white);
+    font-weight: bold;
+}
+
+#box-1:hover, #icon-1 {
+    background: var(--clr-purple);
+}
+
+#box-2:hover, #icon-2 {
+    background: var(--clr-red);
+}
+
+#box-3:hover, #icon-3 {
+    background: var(--clr-blue);
+}
+
+#box-4:hover, #icon-4 {
+    background: var(--clr-green);
+}
+
+#box-5:hover, #icon-5 {
+    background: var(--clr-yellow);
+}
+
+#box-6:hover, #icon-6 {
+    background: var(--clr-turquoise);
+}
+
+#box-7:hover, #icon-7 {
+    background: var(--clr-pink);
+}
+
+#box-8:hover, #icon-8 {
+    background: var(--clr-dark-blue);
+}

@@ -1,0 +1,26 @@
+/* Global CSS variables */
+:root {
+    --mainColor: #15202b;
+    --secondaryColor: #192734;
+
+    --borderColor: #164d56;
+    --themeDotBorder: #fff;
+
+    --mainText: #fff;
+    --secondaryText: #eeeeee;
+
+    --linkColor: #17a2b8;
+
+    --clr-red: #fc6058;
+    --clr-yellow: #fec02f;
+    --clr-green: #2aca3e;
+
+    --themeDotBlue: #192734;
+    --themeDotGreen: #78866b;
+    --themeDotPurple: #7e4c74;
+
+    --previewBg: rgb(25, 39, 52, 0.8);
+    --previewShadow: #111921;
+
+    --buttonColor: #17a2b8;
+}

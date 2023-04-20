@@ -1,0 +1,277 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Global CSS variables */
+:root {
+    --bg-white: #FAFAFA;
+    --bg-black: #212329;
+
+    --clr-neon-blue: #50CDFB;
+    --clr-light-blue: #337AF1;
+    --clr-bright-red: #F55D5D;
+    --clr-light-red: #F9433DCC;
+    --clr-bright-purple: #5250FB;
+    --clr-dark-grey: #212329;
+    --clr-light-grey: #B1B1B1;
+    --clr-black: #2C2C2C;
+    --clr-white: #FFF;
+}
+
+/* Reset box-sizing model and default margin/padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling for the main container */
+.main {
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-white) url(/images/svg-gradient.svg) bottom right/contain no-repeat;
+    /* background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat; */
+    overflow-x: hidden;
+}
+
+/* Styling for the navbar container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Styling for the navbar logo */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+/* Don't show the bars icon on desktop */
+nav .fa-bars {
+    display: none;
+}
+
+/* Styling for the nav links container */
+ul {
+    display: flex;
+}
+
+/* Styling for the nav links */
+li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+/* Hover effect for nav links */
+.nav-links {
+    position: relative;
+}
+
+.nav-links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: var(--clr-white);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.nav-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Styling for the signup button */
+.nav-btn {
+    background: var(--clr-neon-blue);
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: var(--clr-white);
+}
+
+/* Hover effect for the signup button */
+.nav-btn:hover {
+    background: var(--clr-light-blue);
+    transition: all 0.2s ease-out;
+}
+
+/* Styling for the main content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    max-width: 80%;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+.main-col-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.main-col-right {
+    width: 50%;
+}
+
+/* Styling for the main content image */
+.main-img {
+    position: absolute;
+    top: 100px;
+}
+
+/* Styling for the main content info */
+.main-content h1,
+.main-content p {
+    margin-bottom: 1.5rem;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+}
+
+/* Styling for the email input field */
+.email {
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-left: 6px solid var(--clr-bright-purple);
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.25);
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+}
+
+/* Styling for the email envelope icon */
+.icon {
+    position: absolute;
+    padding-left: 25px;
+    transform: translate(0%, 100%);
+    color: var(--clr-bright-purple);
+    width: 70px;
+    text-align: left;
+}
+
+/* Styling for the "Get Started" button */
+.main-btn {
+    background: var(--clr-bright-purple);
+    padding: 14px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: none;
+    width: 180px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+/* Hover effect for the "Get Started" button */
+.main-btn:hover {
+    background: var(--clr-neon-blue);
+    transition: all 0.2s ease-out;
+}
+
+/* Media queries */
+@media screen and (max-width: 1300px) {
+    .main {
+        background: var(--bg-white) url(/images/svg-gradient.svg) top right -150px/contain no-repeat;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    /* Adjust background image for tablet/mobile */
+    .main {
+        background: var(--bg-white) url(/images/svg-gradient.svg) top right -400px/contain no-repeat;
+    }
+
+    /* Decrease font size of main content */
+    .main-col-left p {
+        font-size: 1.2rem;
+    }
+
+    /* Hide the nav links and add the bars icon for tablet/mobile */
+    nav ul {
+        display: none;
+    }
+
+    nav .fa-bars {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--clr-white);
+    }
+
+    /* Decrease size of main content image */
+    .main-img {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust background image for tablet/mobile */
+    .main {
+        background: var(--bg-white) url(/images/mobile-1.svg) bottom -250px right -100px/contain no-repeat;
+    }
+
+    /* Make bars icon black so it can be seen */
+    nav .fa-bars {
+        color: #000;
+    }
+
+    /* Styling for the main content */
+    .main-content {
+        display: block;
+        justify-content: center;
+        max-width: 70%;
+    }
+
+    .main-col-left {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        margin-top: 5rem;
+    }
+
+    /* Styling for the email input field and "Get Started" button */
+    .email,
+    .main-btn {
+        width: 100%;
+    }
+
+    /* Move position of main content image */
+    .main-img {
+        top: 75%;
+    }
+}
+
+/* Media queries for the footer */
+@media screen and (max-width: 1150px) {
+    .footer {
+        height: 50vh;
+
+    }
+}

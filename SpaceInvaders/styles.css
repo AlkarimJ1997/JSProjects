@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+p {
+    position: fixed;
+    z-index: 1;
+    color: white;
+    left: 10px;
+    top: 10px;
+    margin: 0;
+    font-family: sans-serif;
+}
