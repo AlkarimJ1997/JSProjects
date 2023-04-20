@@ -14,7 +14,7 @@ Projects are presented in alphabetical order and include
 
 Made with basic HTML, CSS, and Javascript.
 
-![Gym Landing Page](../assets/1.png?raw=true)
+![Gym Landing Page](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/1.png)
 
 ### Inventory Grid
 
