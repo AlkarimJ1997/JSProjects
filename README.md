@@ -10,32 +10,30 @@ Projects are presented in alphabetical order and include
 
 ## Projects
 
-[ImageAssets]: https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/
-
 ### Gym Landing Page
 
 Made with basic HTML, CSS, and Javascript.
 
-![Gym Landing Page]([ImageAssets]1.png)
+![Gym Landing Page](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/1.png)
 
 ### Inventory Grid
 
 Made with HTML, CSS, and Javascript. Grid design.
 
-![Inventory Grid](./.images/2.png)
+![Inventory Grid](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/2.png)
 
 ### Multiplayer Game
 
 Made with HTML, CSS, and Javascript. Multiplayer game using Firebase.
 
-![Multiplayer Game](./.images/4.png)
-![Change Color](./.images/3.png)
+![Multiplayer Game](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/4.png)
+![Change Color](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/3.png)
 
 ### Navbar Dropdown Mega Menu
 
 Made with HTML, CSS, and Javascript. Dropdown menu.
 
-![Navbar Dropdown Mega Menu](./.images/5.png)
+![Navbar Dropdown Mega Menu](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/5.png)
 
 ### Pokemon
 
@@ -47,7 +45,7 @@ Currently working on this project. Bugs to fix.
 
 Made with HTML, CSS, and Javascript. Multiple Themes.
 
-![Portfolio Site](./.images/6.png)
+![Portfolio Site](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/6.png)
 
 ### Sidebar with Dark Mode Toggle
 
@@ -59,8 +57,8 @@ Made with HTML, CSS, and Javascript. Sidebar with dark mode toggle.
         <td>Sidebar Expanded</td>
     </tr>
     <tr>
-        <td><img src="./.images/7.png"/></td>
-        <td><img src="./.images/8.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/7.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/8.png"/></td>
     </tr>
     <tr>
         <td>Dark Mode Toggle</td>
@@ -68,9 +66,9 @@ Made with HTML, CSS, and Javascript. Sidebar with dark mode toggle.
     </tr>
     <tr>
         <td valign="top">
-            <img src="./.images/9.png"/>
+            <img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/9.png"/>
         </td>
-        <td><img src="./.images/10.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/10.png"/></td>
     </tr>
 </table>
 
@@ -84,8 +82,8 @@ Made with HTML, CSS, and Javascript. Slide button animations.
         <td>Slide Left to Right</td>
     </tr>
     <tr>
-        <td><img src="./.images/11.png"/></td>
-        <td><img src="./.images/12.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/11.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/12.png"/></td>
     </tr>
     <tr>
         <td>Default State</td>
@@ -93,9 +91,9 @@ Made with HTML, CSS, and Javascript. Slide button animations.
     </tr>
     <tr>
         <td valign="top">
-            <img src="./.images/13.png"/>
+            <img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/13.png"/>
         </td>
-        <td><img src="./.images/14.png"/></td>
+        <td><img src="https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/14.png"/></td>
     </tr>
 </table>
 
@@ -109,24 +107,24 @@ Currently working on this project. Bugs to fix.
 
 Made with HTML, CSS, and Javascript. Space landing page with contact form.
 
-![Space Landing Page](./.images/15.png)
-![Hexagonal Grid](./.images/16.png)
-![Contact Form](./SpaceLandingPage/preview3.png)
+![Space Landing Page](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/15.png)
+![Hexagonal Grid](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/16.png)
+![Contact Form](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/20.png)
 
 ### Tileset Map Editor
 
 Made with HTML, CSS, and Javascript. Tileset map editor.
 
-![Tileset Map Editor](./.images/17.png)
+![Tileset Map Editor](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/17.png)
 
 ### Top Down Camera
 
 Made with HTML, CSS, and Javascript. Top down camera for 2D RPG games.
 
-![Top Down Camera](./.images/18.png)
+![Top Down Camera](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/18.png)
 
 ### White Blue Landing Page
 
 Made with HTML, CSS, and Javascript. Landing Page with White and Blue theme.
 
-![White Blue Landing Page](./.images/19.png)
+![White Blue Landing Page](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/19.png)
