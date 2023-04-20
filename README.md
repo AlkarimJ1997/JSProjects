@@ -10,11 +10,13 @@ Projects are presented in alphabetical order and include
 
 ## Projects
 
+[ImageAssets]: https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/
+
 ### Gym Landing Page
 
 Made with basic HTML, CSS, and Javascript.
 
-![Gym Landing Page](https://raw.githubusercontent.com/AlkarimJ1997/JSProjects/assets/images/1.png)
+![Gym Landing Page]([ImageAssets]1.png)
 
 ### Inventory Grid
 
