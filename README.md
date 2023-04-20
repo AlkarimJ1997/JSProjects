@@ -14,7 +14,7 @@ Projects are presented in alphabetical order and include
 
 Made with basic HTML, CSS, and Javascript.
 
-![Gym Landing Page](./.images/1.png)
+![Gym Landing Page](../assets/1.png?raw=true)
 
 ### Inventory Grid
 
